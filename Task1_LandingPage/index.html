@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressive Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">BrandName</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg-gradient"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1 class="animate-fade-in">Welcome to Your Next Project</h1>
+          <p class="animate-fade-in" style="animation-delay:0.2s">Build beautiful websites with ease. Start your journey with us and unlock your creativity.</p>
+          <a href="#features" class="cta-btn animate-pulse" onclick="scrollToFeatures(event)">Get Started</a>
+        </div>
+        <div class="hero-image animate-slide-in">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Hero Image">
+        </div>
+      </div>
+      <svg class="hero-svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L48,197.3C96,171,192,117,288,117.3C384,117,480,171,576,197.3C672,224,768,224,864,197.3C960,171,1056,117,1152,122.7C1248,128,1344,192,1392,224L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="animate-fade-in">Features</h2>
+        <div class="features-grid">
+          <div class="feature-card animate-slide-in" style="animation-delay:0.1s">
+            <div class="feature-icon"><span>🚀</span></div>
+            <h3>Easy to Use</h3>
+            <p>Intuitive design and clear documentation make it simple for anyone to get started.</p>
+          </div>
+          <div class="feature-card animate-slide-in" style="animation-delay:0.2s">
+            <div class="feature-icon"><span>📱</span></div>
+            <h3>Responsive Design</h3>
+            <p>Your site looks great on any device, from mobile to desktop, with no extra effort.</p>
+          </div>
+          <div class="feature-card animate-slide-in" style="animation-delay:0.3s">
+            <div class="feature-icon"><span>🎨</span></div>
+            <h3>Customizable</h3>
+            <p>Personalize every aspect to match your brand and vision with flexible options.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-bg-svg">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M0.00,49.98 C150.00,150.00 349.99,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #f7b267;"></path></svg>
+      </div>
+      <div class="container about-content">
+        <div class="about-text animate-fade-in">
+          <h2>About Us</h2>
+          <p>We are passionate about empowering creators to build stunning web experiences. Our mission is to provide tools and resources that make web development accessible and enjoyable for everyone.</p>
+        </div>
+        <div class="about-image animate-slide-in">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="About Image">
+        </div>
+      </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="animate-fade-in">What Our Users Say</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card card-flip">
+            <div class="card-front">
+              <p>"This landing page template made my project so much easier! Highly recommended."</p>
+              <span>- Alex</span>
+            </div>
+            <div class="card-back">
+              <p>"The support was fantastic and the design is top-notch!"</p>
+              <span>- Alex</span>
+            </div>
+          </div>
+          <div class="testimonial-card card-flip">
+            <div class="card-front">
+              <p>"Beautiful design and super easy to customize. Love it!"</p>
+              <span>- Jamie</span>
+            </div>
+            <div class="card-back">
+              <p>"I was able to launch my site in a day. Amazing!"</p>
+              <span>- Jamie</span>
+            </div>
+          </div>
+          <div class="testimonial-card card-flip">
+            <div class="card-front">
+              <p>"Responsive and modern. My site looks great on every device."</p>
+              <span>- Taylor</span>
+            </div>
+            <div class="card-back">
+              <p>"The animations and layout are so professional!"</p>
+              <span>- Taylor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter" id="contact">
+      <div class="container newsletter-content animate-fade-in">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest updates and resources.</p>
+        <form class="newsletter-form" onsubmit="sendEmail(event)">
+          <input type="email" id="userEmail" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <span>+91 9346340410</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <span>yuvireddy12341@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span>&copy; 2025  All rights reserved.</span>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Twitter"><svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.4.36a9.09 9.09 0 01-2.88 1.1A4.52 4.52 0 0016.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03C7.69 5.4 4.07 3.7 1.64 1.15c-.38.65-.6 1.4-.6 2.2 0 1.52.77 2.86 1.94 3.65A4.48 4.48 0 01.96 6v.06c0 2.13 1.52 3.91 3.54 4.31-.37.1-.76.16-1.16.16-.28 0-.55-.03-.81-.08.55 1.72 2.16 2.97 4.07 3A9.05 9.05 0 010 19.54a12.8 12.8 0 006.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.41-.02-.61A9.22 9.22 0 0023 3z"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a4 4 0 00-4 4v3H7v4h4v8h4v-8h3l1-4h-4V6a1 1 0 011-1h3z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
+      </div>
+          </div>
+    </footer>
+  </body>
+  <script>
+    function sendEmail(event) {
+      event.preventDefault();
+      
+      const userEmail = document.getElementById('userEmail').value;
+      const subject = 'Newsletter Subscription';
+      const body = `Thank you for subscribing to our newsletter!\n\nWe're excited to have you on board. You'll receive updates about our latest projects and resources.\n\nBest regards,\nThe Team`;
+      
+      // Create mailto link
+      const mailtoLink = `mailto:yuvireddy12341@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      // Open default email client
+      window.open(mailtoLink);
+      
+      // Show success message
+      alert('Thank you for subscribing! Your email client will open to send a confirmation.');
+      
+      // Clear the form
+      document.getElementById('userEmail').value = '';
+    }
+
+    function scrollToFeatures(event) {
+      event.preventDefault();
+      
+      const featuresSection = document.getElementById('features');
+      const headerHeight = document.querySelector('header').offsetHeight;
+      const targetPosition = featuresSection.offsetTop - headerHeight - 20;
+      
+      // Smooth scroll to features section
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+      
+      // Add a subtle animation effect to the button
+      const button = event.target;
+      button.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        button.style.transform = '';
+      }, 150);
+    }
+
+    // Add smooth scrolling to all navigation links
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('nav a[href^="#"]');
+      
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetId);
+          
+          if (targetSection) {
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const targetPosition = targetSection.offsetTop - headerHeight - 20;
+            
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</html> 
